@@ -4,7 +4,9 @@
 This endpoint containing a json list of jobs listings [https://api.myjson.com/bins/kez8a](https://api.myjson.com/bins/kez8a)
 
 Build an application to search and list jobs listings:
-![Mock](https://i.imgur.com/Q49cnUx.jpg) [illustration purpose only]
+![Mock](https://i.imgur.com/Q49cnUx.jpg) 
+
+[Above layout is for illustration purpose only]
 
 
 ## Requirements and Output
