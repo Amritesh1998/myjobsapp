@@ -1,7 +1,7 @@
 ![](https://i.imgur.com/dMPfzBQ.png)
 
 ## Front End Developer Challenge
-This endpoint containing a json list of jobs listings [https://api.myjson.com/bins/kez8a](https://api.myjson.com/bins/kez8a)
+This endpoint containing a json list of jobs listings [https://jobsqared.herokuapp.com/jobs](https://jobsqared.herokuapp.com/jobs)
 
 Build an application to search and list jobs listings:
 ![Mock](https://i.imgur.com/Q49cnUx.jpg) 
@@ -12,9 +12,13 @@ Build an application to search and list jobs listings:
 ## Requirements and Output
 
 - User select the expirence or location or skill to search jobs
-- Display all expiring job listings 
+- Display all expiring job listings
 - Display the total number of jobs found
 - Display the total number of jobs forund base on user search
+- 
+## Good to have 
+
+- SSO implementation 
 
 ### Features
 
