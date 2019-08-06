@@ -3,8 +3,7 @@
 ## Front End Developer Challenge
 This endpoint containing a json list of jobs listings [https://jobsqared.herokuapp.com/jobs](https://jobsqared.herokuapp.com/jobs)
 
-Build an application to search and list jobs listings:
-![Mock](https://i.imgur.com/Q49cnUx.jpg) 
+Build an application to search and list jobs listings
 
 [Above layout is for illustration purpose only]
 
@@ -15,10 +14,11 @@ Build an application to search and list jobs listings:
 - Display all expiring job listings
 - Display the total number of jobs found
 - Display the total number of jobs forund base on user search
-- 
+
 ## Good to have 
 
 - SSO implementation 
+- Display pagination
 
 ### Features
 
@@ -29,7 +29,7 @@ Build an application to search and list jobs listings:
 
 ####  Build a frontend application to consume your final search endpoint using one of the following:
 - Angular
-- React
+- React (preferred)
 - Vuejs
 
 
