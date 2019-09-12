@@ -1,7 +1,7 @@
 ![](https://i.imgur.com/dMPfzBQ.png)
 
 ## Front End Developer Challenge
-This endpoint containing a json list of jobs listings [https://jobsqared.herokuapp.com/jobs](https://jobsqared.herokuapp.com/jobs)
+This endpoint containing a json list of jobs listings [https://nut-case.s3.amazonaws.com/jobs.json](https://nut-case.s3.amazonaws.com/jobs.json)
 
 Build an application to search and list jobs listings
 
