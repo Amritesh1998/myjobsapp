@@ -1,0 +1,85 @@
+.navbar{
+    color: aqua;
+}
+
+.qwe{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.example-card {
+    max-width: 400px;
+    margin-left: 50px;
+  }
+
+  form.form-inline {
+    margin: auto;
+
+}
+
+.btn {
+    border-radius: 0% !important;
+    height: 100% !important;
+    width: auto !important;
+    line-height: 22px;
+}
+  
+.btn-outline-primary:hover {
+    color: #fff;
+  background-color: #0075db !important;
+  border: 2px solid #0c60a9 !important;
+}
+
+.btn-outline-primary.focus, .btn-outline-success:focus {
+    box-shadow: 0 0 0 0.2rem rgb(0, 117, 219);
+    color: #000 !important;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #0075db !important;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+/* card */
+
+mat-card.example-card.mat-card {
+  flex-direction: row;
+    display: inline-block;
+    margin: 16px;
+    padding: 10px;
+    width: 100% !important;
+    height: auto !important;
+    box-shadow: 0px 4px 10px 7px #0075db5e !important;
+  }
+  
+  mat-card-title.mat-card-title {
+  word-wrap: break-word;
+  overflow: hidden;
+  width: 220px;
+  font-size: 16px;
+  padding-top: 5px;
+  }
+  
+  
+  form.form-inline.my-2.my-lg-0.ng-untouched.ng-pristine.ng-valid {
+  float: right;
+  padding-top: 15px;
+  }
+  
+  .ngx-pagination {
+  display: none !important;
+  }
+  
+  button.upcomingAddButton.mat-raised-button.mat-primary {
+  margin-right: 10px;
+  }
+
+  button.upcomingAddButton.mat-raised-button.mat-primary {
+    margin: 10px 2px!important;
+    color: #fff !important;
+    background-color: #0075db !important;
+}

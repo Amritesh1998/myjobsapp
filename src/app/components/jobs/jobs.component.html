@@ -1,0 +1,49 @@
+<nav class="navbar navbar-light bg-dark">
+    <a class="navbar-brand">My Jobs App</a>
+    <form class="form-inline center" (ngSubmit)='getJobsList()'>
+        <input class="form-control mr-sm-2" type="search" placeholder="Search Jobs" id="search-text-field"
+            [(ngModel)]="searchParam" [ngModelOptions]="{standalone: true}" required>
+        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit" id="search-button"
+            (click)="getJobsList()">Search</button>
+    </form>
+</nav>
+
+<div class="jumbotron">
+    <h1 class="display-4">All Jobs Listing</h1>
+    <p class="lead">Total number of jobs found based : {{ leng?.length }}</p>
+    <p class="lead">Total number of jobs found based on user search : {{ jobs?.length }}</p>
+
+    <div class="qwe">
+        <form class="form-inline center" (ngSubmit)='filterJobs()'>
+            <input class="form-control mr-sm-2" type="search" placeholder="Company Name" id="search-text-field"
+                [(ngModel)]="searchParam1" [ngModelOptions]="{standalone: true}" required>
+            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit" id="search-button"
+                (click)="filterJobs()">Filter</button>
+        </form>
+
+        <button class="upcomingAddButton" mat-raised-button color=primary (click)="sortByLocation()">Sort By Location
+            <i class="fa fa-star" aria-hidden="true"></i></button>
+        <button class="upcomingAddButton" mat-raised-button color=primary (click)="sortByExperience()">Sort By
+            Experience
+            <i class="fa fa-star" aria-hidden="true"></i></button>
+        <button class="upcomingAddButton" mat-raised-button color=primary (click)="expiringJobs()">All Expiring Jobs
+            <i class="fa fa-star" aria-hidden="true"></i></button>
+    </div>
+</div>
+
+<div>
+    <mat-card class="example-card" *ngFor="let job of jobs | paginate: { itemsPerPage: 3, currentPage: p }">
+        <mat-card-header>
+            <mat-card-title><strong>Id:</strong> {{job._id}}</mat-card-title>
+            <mat-card-title><strong>Title:</strong> {{job.title}}</mat-card-title>
+            <mat-card-title><strong>Link:</strong> {{job.applylink}}</mat-card-title>
+            <mat-card-title><strong>Company:</strong> {{job.companyname}}</mat-card-title>
+            <mat-card-title><strong>Location:</strong> {{job.location}}</mat-card-title>
+            <mat-card-title><strong>Experience:</strong> {{job.experience}}</mat-card-title>
+            <mat-card-title><strong>Skills:</strong> {{job.skills}}</mat-card-title>
+            <mat-card-title><strong>Start Date:</strong> {{job.startdate}}</mat-card-title>
+            <mat-card-title><strong>End Date:</strong> {{job.enddate}}</mat-card-title>
+        </mat-card-header>
+    </mat-card>
+</div>
+<pagination-controls (pageChange)="p = $event"></pagination-controls>
