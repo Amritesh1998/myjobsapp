@@ -7,6 +7,8 @@
 1. run app in terminal =>   ng serve -o  
 2. run test cases      =>   ng test
 3. intall dependencies =>   npm install   (if needed)
+  or  npm install --save-dev @angular-devkit/build-angular
+  
 ## Steps to create
 1. created angular project  ->  ng new myjobsapp
 2. created job componenet in components folder  =>  ng g c components/jobs
